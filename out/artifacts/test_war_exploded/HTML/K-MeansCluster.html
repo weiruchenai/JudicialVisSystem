@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>K-MeansCluster</title>
+    </head>
+    <body>
+        <div id="kmeans">
+            <div><svg></svg></div>
+            <div><button id="step">步骤</button> <button id="restart" disabled>重新开始</button><button id="run">运行</button></div>
+            <fieldset style="display: inline; margin: .8em 0 1em 0; border: 1px solid #999; padding: .5em">
+                <div><label for="N">N (节点数):</label><input type="number" id="N" min="2" max="1000" value="100"></div>
+                <div><label for="K">K (集群数):</label><input type="number" id="K" min="2" max="50" value="5"></div>
+                <div><button id="reset">更新节点</button></div>
+            </fieldset>
+        </div>
+
+        <script src="../JS/d3.v3.js" charset="utf-8"></script>
+        <script src="../JS/jquery.js"></script>
+        <script src="k-means.js"></script>
+    </body>
+</html>
